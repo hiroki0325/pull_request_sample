@@ -13,3 +13,18 @@ GithubのREADMEファイルはGithubマークダウン記法を使って記述�
 7. git remote add と git pushのコマンドをコピー
 8. `git remote add origin githubのURL`コマンドでローカルとリモートを接続
 9. `git push -u origin master`コマンドで保存したソースコードをリモートへ送る
+
+## pullの流れ
+1. リモートリポジトリをローカルより育てる
+2. `git pull origin master`コマンドでリモート上の最新リポジトリをローカルに持ってくる
+
+## Pull Requestの流れ
+1. `git checkout -b ブランチ名`コマンドで新規ブランチを作成(同時にブランチの切り替えも行ってくれる)
+2. なにかしらのアップデートをする
+3. `git add .``git commit -m "コメント"`の順で保存する
+4. `git push origin 新しいブランチ名`コマンドでリモート上に新しくブランチを作成してpush
+
+### ブランチの切り替え方
++ `git checkout ブランチ名` コマンドでブランチを行き来出来る
+    + 現在いるブランチ上で何かしらの変更を行っていた場合はその変更内容を保存もしくは削除してからブランチを移動すること
+
