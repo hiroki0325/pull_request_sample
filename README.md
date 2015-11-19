@@ -53,3 +53,4 @@ GithubのREADMEファイルはGithubマークダウン記法を使って記述�
 + 'git branch -d ブランチ名'
 + もし`error: The branch 'ブランチ名' is not fully merged.`が出れば、
     + `git branch -D ブランチ名`で強制削除も可能
+
